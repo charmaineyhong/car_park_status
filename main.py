@@ -2,7 +2,9 @@ import argparse
 from modules.data_loader import DataLoader
 from modules.api_fetcher import APIFetcher
 from modules.data_merger import DataMerger
-from modules.cli import CLI
+from modules import cli
+
+
 
 def main():
     parser = argparse.ArgumentParser(description="Car Park Application")
@@ -31,5 +33,8 @@ def main():
     else:
         parser.print_help()
 
-if __name__ == '__main__':
-    main()
+if __name__ == "__main__":
+    cli.main()
+
+
+
