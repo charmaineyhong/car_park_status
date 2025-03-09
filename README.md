@@ -25,3 +25,30 @@ This application consists of several modules, each handling a specific aspect of
 ### 4. Command Line Interface (`cli.py`)
 - **Purpose:** Provides a user interface for interacting with the application via the command line.
 - **Functionality:** Supports commands to query by `carpark_number`, search by address, and view the last update time of the car park data.
+
+## Running the Application
+
+### For qureying by carpark number:
+
+```bash
+python main.py --query ACM
+```
+
+### Searching by address
+
+```bash
+python main.py --search "ALJUNIED"
+
+```
+
+### View last updated time
+
+```bash
+python main.py --view ACM
+```
+
+### To run unit tests
+
+```bash
+python -m unittest discover -s tests
+```
