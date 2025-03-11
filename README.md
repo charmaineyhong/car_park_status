@@ -73,12 +73,12 @@ python -m unittest discover -s tests
 ```
 ## Key Design Decisions
 
-- **Modular Structure**: The project is divided into distinct modules—DataLoader, APIFetcher, DataMerger, and CLI—to isolate responsibilities. This improves maintainability and makes each component easier to test.
+- **Modular Structure**: The project is divided into distinct modules—DataLoader, APIFetcher, DataMerger, and CLI to isolate responsibilities. This improves maintainability and makes each component easier to test.
 - **Error Handling**: Each module includes error handling for specific issues (e.g., file not found, JSON parsing errors, missing columns) so that problems are detected and reported at the earliest stage.
 - **Missing Values**: The system is designed to handle missing or invalid data gracefully, using default values (like "N/A") where appropriate.
 - **Data Handling:**: Merging static CSV data with real-time API data is performed via a common key (car park number), ensuring consistency in the final dataset.
 - **Comprehensive Testing**: Separate testing strategy with mocks was implemented to ensure module reliability.
-- **Command-Line Interface (CLI):**: The CLI is built with clear optional arguments (--query, --search, --view) to allow users to easily access information. The CLI displays merged information from both static and real-time sources in a clear format that meets the project requirements.
+- **Command-Line Interface (CLI):**: The CLI is built with clear optional arguments (--query, --search, --view) to allow users to easily access information. The CLI displays merged information from both static and real-time sources in a clear format.
 
 ## Assumptions Made
 
@@ -118,7 +118,7 @@ Dependencies are listed in the `requirements.txt` file and include:
 
 ## Further Improvements
 
-This application could be further improved to be deployed in the cloud. To do so this application could be deployed as a containerized application using Docker, which encapsulates python code into a consistent, reproducible environment. 
+This application could be further improved to be deployed in the cloud. To do so this application could be deployed as a containerized application using Docker, which encapsulates all the python code into a consistent, reproducible environment. 
 
 The Docker image would be built from a Dockerfile that installs dependencies from the requirements.txt file and sets the entry point to the main analysis pipeline. This container can then be deployed to AWS or any other platforms
 
