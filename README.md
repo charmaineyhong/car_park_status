@@ -24,6 +24,7 @@ Provides a command-line interface that allows users to:
   - Query car park details by car park number.
   - Search for car parks by address.
   - View the last update time for a car park.
+
 The CLI formats and displays merged data, including operating hours and rules, alongside static and real-time details.
 
 
