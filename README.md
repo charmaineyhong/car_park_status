@@ -118,7 +118,7 @@ Dependencies are listed in the `requirements.txt` file and include:
 
 ## Further Improvements
 
-This application could be further improved to be deployed in the cloud. To do so this application could be deployed as a containerized application using Docker, which encapsulates python code handling data loading, restaurant details extraction, event processing, and ratings analysis into a consistent, reproducible environment. 
+This application could be further improved to be deployed in the cloud. To do so this application could be deployed as a containerized application using Docker, which encapsulates python code into a consistent, reproducible environment. 
 
 The Docker image would be built from a Dockerfile that installs dependencies from the requirements.txt file and sets the entry point to the main analysis pipeline. This container can then be deployed to AWS or any other platforms
 
