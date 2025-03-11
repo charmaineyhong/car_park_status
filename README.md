@@ -114,8 +114,8 @@ car_park_status/
 
 Dependencies are listed in the `requirements.txt` file and include:
 
-- pandas
-- openpyxl (for Excel file handling)
+-pandas: Used for loading, cleaning, processing, and merging both the static CSV data and the API data.
+-requests: Used to perform HTTP requests to the real-time HDB Carpark Availability API and fetch JSON data.
 
 ## Further Improvements
 
