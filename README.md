@@ -17,7 +17,7 @@ Loads and cleans the static car park details from the CSV file. It validates tha
 Retrieves real-time car park availability data from the API, processes the JSON response, and converts it into a structured Pandas DataFrame. It extracts key information such as `carpark_number`, `update_datetime`, `total_lots`, `lot_type`, `lots_available`.
 
 ### 3. Data Merger (`data_merger.py`)
-Merges the static data with the API data based on a common key (`car_park_no`). If necessary, it renames columns so that both data sources use a consistent key. It also handles missing values to ensure data consistency.
+Merges the static data with the API data based on a common key (`car_park_no`). It also handles missing values to ensure data consistency.
 
 ### 4. Command Line Interface (`cli.py`)
 Provides a command-line interface that allows users to:
